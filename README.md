@@ -75,23 +75,41 @@ Username: testuser
 **Struktura projektu**
 
 HabitTracker/
+
 ├── backend/
+
 │   ├── src/
+
 │   │   ├── controllers/   # Logika biznesowa
+
 │   │   ├── middleware/    # Autoryzacja JWT
+
 │   │   ├── models/        # Schematy danych
+
 │   │   ├── routes/        # Endpointy API
+
 │   │   ├── app.js         # Konfiguracja Express
+
 │   │   └── server.js      # Uruchomienie serwera
+
 │   └── package.json
+
 └── frontend/
+
     ├── src/
+    
     │   ├── components/    # Komponenty Vue
+    
     │   ├── router/        # Routing
+    
     │   ├── store/         # Zarządzanie stanem
+    
     │   ├── views/         # Główne strony
+    
     │   ├── App.vue        # Główny komponent
+    
     │   └── main.js        # Inicjalizacja Vue
+    
     └── package.json
 **API Endpoints**
 Autoryzacja:
