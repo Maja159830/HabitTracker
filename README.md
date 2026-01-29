@@ -1,8 +1,11 @@
 **HabitTracker - Aplikacja do Śledzenia Nawyków**
+
 **Opis projektu**
+
 HabitTracker to aplikacja webowa do śledzenia i budowania codziennych nawyków. Składa się z backendu w Node.js/Express i frontendu w Vue.js 3.
 
 **Funkcjonalności**
+
 - Rejestracja i logowanie użytkowników z JWT
 
 - Tworzenie, edycja i usuwanie nawyków
@@ -14,6 +17,7 @@ HabitTracker to aplikacja webowa do śledzenia i budowania codziennych nawyków.
 - Responsywny interfejs
 
 **Technologie**
+
 Backend:
 Node.js, Express.js
 
@@ -29,6 +33,7 @@ Vite, Axios
 CSS3, Responsive Design
 
 **Instalacja**
+
 1. Klonowanie repozytorium
 
 git clone https://github.com/twojanazwa/HabitTracker.git
@@ -57,6 +62,7 @@ Terminal 2 - Frontend:
 cd frontend
 npm run dev
 **Adresy**
+
 Frontend: http://localhost:5173
 
 Backend: http://localhost:5001
@@ -64,6 +70,7 @@ Backend: http://localhost:5001
 API Health: http://localhost:5001/api/health
 
 **Dane testowe**
+
 Aplikacja automatycznie tworzy testowego użytkownika:
 
 Email: test@example.com
@@ -73,6 +80,7 @@ Hasło: password123
 Username: testuser
 
 **Struktura projektu**
+
 
 HabitTracker/
 
@@ -112,6 +120,7 @@ HabitTracker/
     
     └── package.json
 **API Endpoints**
+
 Autoryzacja:
 POST /api/auth/register - Rejestracja
 
@@ -129,6 +138,7 @@ DELETE /api/habits/:id - Usuń nawyk
 POST /api/habits/:id/track - Śledź postęp
 
 **Przykładowe requesty**
+
 Rejestracja:
 
 POST http://localhost:5001/api/auth/register
@@ -162,6 +172,7 @@ Content-Type: application/json
   "goal": 1
 }
 **Rozwiązywanie problemów**
+
 1. Backend nie startuje
 Sprawdź czy port 5001 jest wolny
 
@@ -184,6 +195,7 @@ Sprawdź nagłówki Authorization w requestach
 Sprawdź JWT_SECRET w .env
 
 **Testowanie**
+
 Otwórz http://localhost:5173
 
 Zaloguj się z danymi test@example.com / password123
@@ -195,6 +207,7 @@ Oznacz jako wykonany
 Sprawdź statystyki na dashboard
 
 **Uwagi**
+
 Aplikacja używa pamięci jako bazy danych - dane są tracone po restarcie serwera
 
 W produkcji należy użyć prawdziwej bazy danych (MongoDB, PostgreSQL)
